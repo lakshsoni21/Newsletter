@@ -1,0 +1,116 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,p, .btn{
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    --primary-color: hsl(4, 100%, 67%);
+    --dark-slate-grey: hsl(234, 29%, 20%);
+    --charcoal-grey: hsl(235, 18%, 26%);
+    --grey: hsl(231, 7%, 60%);
+    --white: hsl(0, 0%, 100%);
+}
+
+.flex-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--dark-slate-grey);
+}
+
+.container{
+    background-color: #fff;
+    border-radius: 20px;
+    width: 460px;
+    height: 470px;
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.container img{
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 60px;
+}
+
+.container h1{
+    font-size: 48px;
+    line-height: 50px;
+}
+
+.text-content{
+    width: 80%;
+}
+
+.btn{
+    padding: 15px;
+    background-color: var(--dark-slate-grey);
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+
+    transition: all 10ms linear;
+    border-radius: 10px;
+    margin-left: -2px;
+    margin-top: 10px;
+}
+
+.btn:hover{
+    background-color: hsl(4, 71%, 62%);
+    cursor: pointer;
+    box-shadow: 10px 15px 50px var(--primary-color);
+    border: none;
+}
+
+@media(max-width:425px){
+    .flex-main{
+        background-color: #fff  ;
+        align-items:flex-start;
+    }
+
+    .container{
+        padding: 45px 30px;
+        height: 100%;
+        padding-top: 120px;
+    }
+
+    .container .btn{
+        position: absolute;
+        bottom: 57px;
+        align-self: flex-start;
+        padding: 19px 67px;
+        width: 84%;
+        font-size: 18px;
+    }
+
+    .text-content {
+        width: 100%;
+        line-height: 28px;
+        font-size: 17px;
+    }
+
+    .container h1{
+        font-size: 41px;
+        line-height: 46px;
+    }
+
+}   
+
+@media(max-width: 335px){
+    .container .btn{
+        font-size: 16px;
+    }
+}

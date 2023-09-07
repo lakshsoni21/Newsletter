@@ -1,0 +1,286 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,p, .btn{
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    --primary-color: hsl(4, 100%, 67%);
+    --dark-slate-grey: hsl(234, 29%, 20%);
+    --charcoal-grey: hsl(235, 18%, 26%);
+    --grey: hsl(231, 7%, 60%);
+    --white: hsl(0, 0%, 100%);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.flex-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--charcoal-grey);
+}
+
+.container{
+    background-color: #fff;
+    display: flex;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+
+.content{
+    padding: 65px 35px;
+}
+
+.content h1{
+    font-size: 50px;
+}
+
+.content p{
+    margin: 26px 4px;
+    font-size: 18px;
+    width: 90%;
+}
+
+.content ul li{
+    list-style: none;
+    background-image: url('/assets/images/icon-list.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 29px;
+    font-size: 19px;
+    margin: 15px 0px;
+}
+
+.content ul{
+    margin: 32px 0px;
+}
+
+.form-div{
+    margin-top: 50px;
+}
+
+.heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading #valid{
+    font-size: 14px;
+}
+
+.email{
+    display: flex;
+    flex-direction: column;
+    padding: 11px 3px;
+    gap: 25px;
+}
+
+.email #emailid{
+    height: 60px;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.246);
+    padding: 20px;
+}
+
+#email::placeholder{
+    font-size: 18px;
+}
+
+.email .btn{
+    height: 60px;
+    background-color: var(--dark-slate-grey);
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 12px;
+
+    transition: all 10ms linear;
+}
+
+.btn:hover{
+    background-color: var(--primary-color);
+    cursor: pointer;
+    box-shadow: 10px 15px 50px var(--primary-color);
+    border: none;
+}
+
+#emailid:hover{
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+#emailid {
+    font-size: 20px;
+}
+
+/* Media Queries */
+@media(max-width: 1096px){
+    .container{
+        width: 90%;
+        height: 80%;
+        gap: 0px;
+        padding: 16px;
+    }
+    .container .img{
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media(max-width: 970px){
+    .content{
+        padding: 40px 12px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content ul li{
+        padding-left: 29px;
+        font-size: 16px;
+        margin: 15px 0px;
+    }
+
+    .container{
+        height: auto;
+    }
+
+    .container img{
+        width: 100%;
+    }
+
+    .content-box h1{
+        font-size: 42px;
+    }
+
+    .content-box p{
+        margin: 20px 4px;
+    }
+
+    .content-box ul{
+        margin-top: 25px;
+        margin-bottom: 0;
+    }
+
+    .form-div{
+        margin-top: 25px;
+    }
+    
+    .email #emailid {
+        height: 53px;
+        width: 360px;
+        font-size: 16px;
+    }
+
+    .email .btn{
+        height: 53px;
+        width: 364px;
+        font-size: 19px;
+    }
+
+}
+
+@media(max-width: 768px){
+
+    .container{
+        gap: 8px;
+    }
+    .container img{
+        width: 98%;
+    }
+
+    .content{
+        width: 330px;
+    }
+    .content ul li{
+        font-size: 15px;
+    }
+    .content p{
+        font-size: 16px;
+    }
+    .content-box h1 {
+        font-size: 40px;
+    }
+
+    .email #emailid{
+        width: 290px;
+    }
+    .email .btn{
+        width: 295px;
+        font-size: 15px;
+    }
+
+}
+
+/* Mobiles */
+@media(max-width: 425px){
+
+    .flex-main{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .container{
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        border-radius: 0px;
+    }
+
+    .container .img{
+        order: -1;
+    }
+
+    .container img{
+        width: 100%;
+    }
+
+    .container .content{
+        width: 100%;
+        padding: 0;
+        margin-top: 21px;
+        padding-left: 18px;
+    }
+
+    .content ul li{
+        background-size: 20px;
+        width: 300px;
+        padding-bottom: 5px;
+        font-size: 17px;
+    }
+
+    .content-box h1{
+        font-size: 35px;
+    }
+
+    .form-div{
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+
+    .email #emailid{
+        width: 90%;
+    }
+
+    .email .btn{
+        width: 92%;
+    }
+
+    .heading h3{
+        font-size: 15px;
+    }
+}
