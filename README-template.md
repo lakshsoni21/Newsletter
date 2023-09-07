@@ -11,6 +11,7 @@ This is a solution to the [Newsletter sign-up form with success message challeng
   - [Built with](#built-with)
 - [Author](#author)
 
+**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -28,14 +29,14 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop Screenshot](/Desktop-Screenshot.png)
-![Mobile Screenshot](/Mobile-Screenshot.png)
+![](./Desktop-Screenshot.png)
+![](./Mobile-Screenshot.png)
 
 
 ### Links
 
-- Solution URL: [Github](https://github.com/lakshsoni21/Newsletter/tree/main)
-- Live Site URL: [Netlify](https://laksh-newsletter.netlify.app)
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
 
@@ -49,9 +50,6 @@ Users should be able to:
 
 ## Author
 
-- Website - [Laksh Soni](https://github.com/lakshsoni21)
-- Frontend Mentor - [@lakshsoni21](https://www.frontendmentor.io/profile/lakshsoni21)
-- Twitter - [@Lakshsoni18](https://twitter.com/LakshSoni18)
-
-
-
+- Website - [Add your name here](https://www.your-site.com)
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Twitter - [@yourusername](https://www.twitter.com/yourusername)

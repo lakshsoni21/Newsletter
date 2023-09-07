@@ -13,5 +13,5 @@ const button = document.querySelector(".btn");
 
 button.addEventListener("click", function(){
     window.close();
-    window.open("http://127.0.0.1:5500/index.html", "_self");
+    window.open("laksh-newsletter.netlify.app/index.html", "_self");
 });
