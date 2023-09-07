@@ -11,7 +11,7 @@ btn.addEventListener("click", function(event){
 
     if(email.indexOf("@") !== -1){
         localStorage.setItem('email', email);
-        window.open("laksh-newsletter.netlify.app/success.html");
+        window.open("/success.html");
 
     } else{
         inputBox.style.border = "2px solid red";
